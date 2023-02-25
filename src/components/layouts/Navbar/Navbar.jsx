@@ -1,14 +1,14 @@
 import React from "react";
-import { Layout, Menu, theme } from "antd";
+import { Layout, Menu } from "antd";
 
 import "./navbar.css";
 
 const { Header } = Layout;
 
 function Navbar() {
-  const {
-    token: { colorPrimary },
-  } = theme.useToken();
+  // const {
+  //   token: { colorPrimary },
+  // } = theme.useToken();
 
   const menuItems = [
     {
