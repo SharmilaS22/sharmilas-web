@@ -1,13 +1,15 @@
 import React from "react";
-import NameAndTitle from "./layouts/NameAndTitle/NameAndTitle";
 
 import Navbar from "./layouts/Navbar/Navbar";
+import NameAndTitle from "./layouts/NameAndTitle/NameAndTitle";
+import About from "./layouts/About/About";
 
 function Home() {
   return (
     <>
       <Navbar />
       <NameAndTitle />
+      <About />
     </>
   );
 }
