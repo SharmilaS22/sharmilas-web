@@ -1,9 +1,24 @@
-import './App.css';
-import Name from './components/layouts/Name';
+import "./App.css";
+import "antd/dist/reset.css";
+import { ConfigProvider } from "antd";
+
+import Name from "./components/layouts/Name";
+import Home from "./components/home/Home";
 
 function App() {
   return (
-    <Name />
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#000000",
+          colorPrimaryBg: "#273290",
+          colorBgContainer: "#bbbbbb",
+        },
+      }}
+    >
+      <Name />
+      <Home />
+    </ConfigProvider>
   );
 }
 
