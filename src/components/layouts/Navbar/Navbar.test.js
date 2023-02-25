@@ -6,4 +6,3 @@ test('renders home, about and contact', () => {
   const menuItems = screen.getAllByRole('menuitem');
   expect(menuItems).toBeTruthy();
 });
-

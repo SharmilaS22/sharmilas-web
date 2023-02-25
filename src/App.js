@@ -2,8 +2,7 @@ import "./App.css";
 import "antd/dist/reset.css";
 import { ConfigProvider } from "antd";
 
-import Name from "./components/layouts/Name";
-import Home from "./components/home/Home";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         },
       }}
     >
-      <Name />
       <Home />
     </ConfigProvider>
   );
