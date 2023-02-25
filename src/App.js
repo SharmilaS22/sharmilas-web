@@ -3,6 +3,7 @@ import "antd/dist/reset.css";
 import { ConfigProvider } from "antd";
 
 import Home from "./components/Home";
+import Name from "./components/layouts/NameAndTitle/Name";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       }}
     >
       <Home />
+      <Name />
     </ConfigProvider>
   );
 }
