@@ -1,54 +1,97 @@
-import React from "react";
-import { Layout, Menu } from "antd";
-
+import React, { useState } from "react";
+import { Button, Drawer, Layout, Menu, theme} from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 import "./navbar.css";
 
 const { Header } = Layout;
-
+//TODO style test
 function Navbar() {
-  // const {
-  //   token: { colorPrimary },
-  // } = theme.useToken();
+  const {
+    token: { colorPrimary, colorBgContainer },
+  } = theme.useToken();
 
   const menuItems = [
+    //TODO: Update links
     {
       label: "Home",
       key: "home",
-      className: 'menu-items'
+      className: "menu-items",
     },
     {
       label: "About",
       key: "about",
-      className: 'menu-items'
+      className: "menu-items",
     },
     {
       label: (
-        <a href="https://sharmilas.medium.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://sharmilas.medium.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Blog
         </a>
       ),
       key: "blog",
-      className: 'menu-items'
+      className: "menu-items",
     },
     {
       label: "Contact",
       key: "contact",
-      className: 'menu-items'
-    }
+      className: "menu-items",
+    },
   ];
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const showDrawer = () => {
+    setMenuOpen(true);
+  };
+
+  const onClose = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <Layout className="layout">
-      <Header>
+      <Header
+        className="sh-header" //does not work 
+        style={{ backgroundColor: colorBgContainer }}
+      >
         <div className="logo" />
         <Menu
-          className="sh-navbar"
-          theme="dark"
           mode="horizontal"
+          style={{ backgroundColor: "inherit", float: "right" }}
+          className="large-screen-menu"
           defaultSelectedKeys={["home"]}
           items={menuItems}
+        ></Menu>
+        <Button
+          open
+          type="primary"
+          onClick={showDrawer}
+          className="mobile-screen-menu-button"
+          style={{color: colorPrimary}}
+        > {/* TODO Fix menu bar active */}
+          <MenuOutlined />
+        </Button>
+        {/* functionality */}
+        {/* Design */}
+        <Drawer
+          title=""
+          placement="right"
+          onClose={onClose}
+          open={menuOpen}
+          width="250"
         >
-        </Menu>
+          <Menu
+            style={{ backgroundColor: "inherit" }}
+            className="mobile-screen-menu"
+            mode="vertical"
+            defaultSelectedKeys={["home"]}
+            items={menuItems}
+          ></Menu>
+        </Drawer>
       </Header>
     </Layout>
   );

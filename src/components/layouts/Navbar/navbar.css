@@ -1,4 +1,33 @@
-/* 
-.sh-navbar {
-  float: right;
+/* .sh-header {
+  background-color: red;
 } */
+
+.large-screen-menu {
+  display: block;
+}
+.mobile-screen-menu {
+  display: none;
+}
+.mobile-screen-menu-button {
+  display: none;
+  background: none;
+  box-shadow: none;
+  font-size: 32px;
+  float: right;
+}
+
+/* .mobile-screen-menu-button:active {
+  background: none;
+} */
+
+@media (max-width: 425px) {
+  .large-screen-menu {
+    display: none;
+  }
+  .mobile-screen-menu {
+    display: block;
+  }
+  .mobile-screen-menu-button {
+    display: block;
+  }
+}
