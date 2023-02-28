@@ -1,13 +1,11 @@
 import React from "react";
-
 import { Layout, theme } from 'antd';
-const { Footer } = Layout;
-
 import Contact from "./Contact";
 import Copyright from "./Copyright";
 import Links from "./Links";
-
 import "./portFooter.css";
+
+const { Footer } = Layout;
 
 function PortFooter() {
   const {
