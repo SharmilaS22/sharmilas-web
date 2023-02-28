@@ -7,8 +7,8 @@ function About() {
         "I enjoy reading Sci-fi and Fantasy novels. Designing digital planners is one of my creative interests."
     ]
     return ( <>
-        {aboutText.map((text) => (
-            <p>{text}</p>
+        {aboutText.map((text, index) => (
+            <p key={index}>{text}</p>
         ))}
     </> );
 }
