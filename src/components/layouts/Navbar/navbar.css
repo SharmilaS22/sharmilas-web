@@ -14,11 +14,14 @@
   box-shadow: none;
   font-size: 32px;
   float: right;
+  margin-top: 0.3rem;
+  margin-right: -1.7rem;
+  height: fit-content;
 }
 
-/* .mobile-screen-menu-button:active {
-  background: none;
-} */
+.anticon svg {
+  color: #bca07c; /* color primary */
+}
 
 @media (max-width: 425px) {
   .large-screen-menu {

@@ -55,7 +55,7 @@ function Navbar() {
   return (
     <Layout className="layout">
       <Header
-        className="sh-header" //does not work 
+        className="sh-header"
         style={{ backgroundColor: colorBgContainer }}
       >
         <div className="logo" />
@@ -72,11 +72,9 @@ function Navbar() {
           onClick={showDrawer}
           className="mobile-screen-menu-button"
           style={{color: colorPrimary}}
-        > {/* TODO Fix menu bar active */}
+        >
           <MenuOutlined />
         </Button>
-        {/* functionality */}
-        {/* Design */}
         <Drawer
           title=""
           placement="right"
