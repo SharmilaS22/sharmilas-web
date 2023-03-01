@@ -11,6 +11,7 @@ const { Content } = Layout;
 function App() {
   const colors = {
     light: "#f9f7fc",
+    lightgrey: "#f4f2f2",
     dark: "#262626",
     primary: "#bca07c",
     secondary: "#d8cbb9",
@@ -21,7 +22,7 @@ function App() {
         token: {
           colorPrimary: colors.primary,
           colorPrimaryBg: colors.secondary,
-          colorBgContainer: colors.secondary,
+          colorBgContainer: colors.lightgrey,
           colorInfo: colors.secondary,
           colorIcon: colors.light,
           colorIconHover: colors.primary,
