@@ -1,7 +1,7 @@
 import React from "react";  
 
 const Name = () => {
-    return <h1>Sharmila S</h1>;
+    return <h1 className="name-element">Sharmila S</h1>;
 }
 
 export default Name;

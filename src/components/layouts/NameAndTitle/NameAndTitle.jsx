@@ -2,10 +2,12 @@ import React from 'react';
 import Name from './Name';
 import Title from './Title';
 
+import './NameAndTitle.css'
+
 function NameAndTitle() {
     return ( <>
-        <Name />
-        <Title />
+        <Name className="name-element"/>
+        <Title className="designation-element"/>
     </> );
 }
 

@@ -1,0 +1,17 @@
+.beige-box {
+  background-color: #d8cbb9; /* Secondary color */
+  height: 500px;
+  width: 800px;
+  position: relative;
+  margin: 3rem 0 0 5rem;
+  -webkit-box-shadow: 10px 10px 0px 0px #262626;
+  -moz-box-shadow: 10px 10px 0px 0px #262626;
+  box-shadow: 10px 10px 0px 0px #262626;
+}
+
+/* 
+font-family: 'Gloock', serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sacramento', cursive;
+ */

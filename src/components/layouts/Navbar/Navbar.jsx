@@ -61,7 +61,6 @@ function Navbar() {
         <div className="logo" />
         <Menu
           mode="horizontal"
-          style={{ backgroundColor: "inherit", float: "right" }}
           className="large-screen-menu"
           defaultSelectedKeys={["home"]}
           items={menuItems}
