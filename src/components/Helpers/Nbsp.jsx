@@ -1,1 +1,2 @@
-export default () => '\u00A0';
+const Nsbp = () => '\u00A0';
+export default Nsbp;
