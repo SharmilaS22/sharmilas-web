@@ -1,14 +1,12 @@
 import React from "react";
 
-import NameAndTitle from "./layouts/NameAndTitle/NameAndTitle";
-import About from "./layouts/About/About";
+import Contents from "./layouts/Content/Contents";
 
 function Home() {
   return (
-    <>
-      <NameAndTitle />
-      <About />
-    </>
+    <div className="home">
+      <Contents />
+    </div>
   );
 }
 

@@ -6,11 +6,12 @@ function About() {
         "I am also a part-time blogger. I write articles on Medium about Node.js, AWS, CSS and related topics.",
         "I enjoy reading Sci-fi and Fantasy novels. Designing digital planners is one of my creative interests."
     ]
-    return ( <>
+
+    return ( <div className="about-box">
         {aboutText.map((text, index) => (
-            <p key={index}>{text}</p>
+            <p className="about-paragraph" key={index}>{text}</p>
         ))}
-    </> );
+    </div> );
 }
 
 export default About;

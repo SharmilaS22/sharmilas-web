@@ -4,8 +4,8 @@ import Title from './Title';
 
 function NameAndTitle() {
     return ( <>
-        <Name />
-        <Title />
+        <Name className="name-element"/>
+        <Title className="designation-element"/>
     </> );
 }
 

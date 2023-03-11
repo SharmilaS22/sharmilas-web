@@ -4,6 +4,11 @@
 
 .large-screen-menu {
   display: block;
+  width: 50%;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  background-color: inherit;
 }
 .mobile-screen-menu {
   display: none;
