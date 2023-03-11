@@ -34,7 +34,7 @@ function App() {
       }}
     >
       <Navbar />
-      <Content style={{ padding: "2rem 1rem" }}>
+      <Content>
         <Home />
       </Content>
       <PortFooter />
