@@ -20,8 +20,9 @@ jobs:
         uses: SharmilaS22/medium-feed-actions@main
         with:
           username: SharmilaS
+          jsonFilepath: src/blogPosts.json
 
-      - name: Get medium posts and print
-        run: |
-          curl https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sharmilas
+      # - name: Get medium posts and print
+      #   run: |
+      #     touch src/medium-blogs.json
 
