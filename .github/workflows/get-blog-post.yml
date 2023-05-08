@@ -13,19 +13,8 @@ jobs:
 
     steps:
 
-      # - name: Checkout repo
-      #   uses: actions/checkout@v3
-
-      - name: Find working dir
-        run: |
-          ls
-          echo ---
-          pwd
-          echo ---
-          find . -name src
-          echo ---
-          cd src/
-          ls
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
       - name: Get medium posts
         uses: SharmilaS22/medium-feed-actions@main
