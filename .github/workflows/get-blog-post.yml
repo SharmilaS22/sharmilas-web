@@ -13,15 +13,15 @@ jobs:
 
     steps:
 
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      # - name: Checkout repo
+      #   uses: actions/checkout@v3
 
       - name: Get medium posts
         uses: SharmilaS22/medium-feed-actions@main
         with:
           username: SharmilaS
 
-      - name: Get medium posts
+      - name: Get medium posts and print
         run: |
           curl https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sharmilas
 
