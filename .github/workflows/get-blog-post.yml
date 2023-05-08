@@ -3,6 +3,9 @@ name: Get medium blog posts
 on:
   schedule:
     - cron: '0 * * * *'
+  push:
+    branches:
+      - "actions-medium-feed"
 
 jobs:
   build:
