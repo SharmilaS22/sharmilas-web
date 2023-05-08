@@ -8,7 +8,7 @@ on:
       - "actions-medium-feed"
 
 jobs:
-  build:
+  medium-feed:
     runs-on: ubuntu-latest
 
     steps:
