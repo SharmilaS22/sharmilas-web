@@ -1,0 +1,28 @@
+name: Get medium blog posts
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  push:
+    branches:
+      - "actions-medium-feed"
+
+jobs:
+  medium-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Get medium posts
+        uses: SharmilaS22/medium-feed-actions@main
+        with:
+          username: SharmilaS
+          jsonFilepath: ./src/blogPosts.json
+
+      # - name: Get medium posts and print
+      #   run: |
+      #     touch src/medium-blogs.json
+
