@@ -19,6 +19,10 @@ function Links() {
       name: "Github",
       url: "https://github.com/SharmilaS22",
     },
+    {
+      name: "Designs",
+      url: "https://sharmidesignsstore.etsy.com/"
+    }
   ];
 
   return (
