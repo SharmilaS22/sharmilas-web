@@ -1,8 +1,8 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -39,4 +39,9 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.box-shadow-dark {
+  -webkit-box-shadow: 10px 10px 0px 0px #262626;
+  -moz-box-shadow: 10px 10px 0px 0px #262626;
+  box-shadow: 10px 10px 0px 0px #262626;
 }
