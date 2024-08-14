@@ -1,2 +1,6 @@
 1. security vulnerability
 https://github.com/SharmilaS22/sharmilas-web/security/dependabot/1
+
+
+
+https://react-slick.neostack.com/docs/example/dynamic-slides

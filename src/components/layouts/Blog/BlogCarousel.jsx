@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Space, Tag, theme } from "antd";
-import Meta from "antd/es/card/Meta";
 import Slider from "react-slick";
 
 import articleListJSON from "../../../blogPosts.json";
@@ -49,15 +48,15 @@ function BlogCarousel() {
             className="card-theme box-shadow-dark"
             cover={<img alt="example" src={article.thumbnail} />}
           >
-            <Meta title={article.title} description={
+            <Card.Meta title={article.title} description={
               <Space wrap align="center" style={{ textAlign: "center" }}>
                 {article.categories.map((tag) => (
-                  <Tag color={colorPrimary} style={{ margin: "5px" }}>
+                  <Tag key={tag} color={colorPrimary} style={{ margin: "5px" }}>
                     {tag}
                   </Tag>
                 ))}
               </Space>
-            }></Meta>
+            }></Card.Meta>
           </Card>
         ))}
       </Slider>
