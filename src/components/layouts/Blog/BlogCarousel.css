@@ -1,11 +1,7 @@
 
 .blog-container {
-    /* margin: 3rem 3rem; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 4rem;
 }
 
 .card-theme{
@@ -13,12 +9,18 @@
     border: none;
     border: black solid 2px;
     background-color: white;
-    margin-inline: 1rem;
-    width: auto !important;
+    margin-inline-start: -10px;
+}
+
+.slick-slider .slick-track {
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
 }
 
 .ant-card img {
     border-radius: 0 !important;
+    height: 200px;
 }
 
 .ant-card-meta-title {
@@ -36,8 +38,18 @@
         border: none;
         border: black solid 2px;
         background-color: white;
-        margin-inline: 1rem;
+        margin-inline: 0.6rem;
         width: auto !important;
     }
+
+    .slick-slider .slick-track {
+        gap: 0px;
+    }
+
+    .blog-container {
+        padding-inline: 0.8rem;
+        padding-block: 2rem;
+    }
+
   }
   
