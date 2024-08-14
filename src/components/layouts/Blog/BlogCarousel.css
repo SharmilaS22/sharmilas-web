@@ -1,0 +1,55 @@
+
+.blog-container {
+    padding-inline: 2rem;
+    padding-block: 4rem;
+}
+
+.card-theme{
+    border-radius: 0;
+    border: none;
+    border: black solid 2px;
+    background-color: white;
+    margin-inline-start: -10px;
+}
+
+.slick-slider .slick-track {
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ant-card img {
+    border-radius: 0 !important;
+    height: 200px;
+}
+
+.ant-card-meta-title {
+    overflow: scroll;
+    white-space: normal !important;
+}
+
+.ant-carousel .slick-prev {
+    display: block; background: red;
+}
+
+@media (max-width: 425px) {
+    .card-theme{
+        border-radius: 0;
+        border: none;
+        border: black solid 2px;
+        background-color: white;
+        margin-inline: 0.6rem;
+        width: auto !important;
+    }
+
+    .slick-slider .slick-track {
+        gap: 0px;
+    }
+
+    .blog-container {
+        padding-inline: 0.8rem;
+        padding-block: 2rem;
+    }
+
+  }
+  
